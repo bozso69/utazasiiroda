@@ -30,9 +30,8 @@ class utilTest {
 
     @Test
     void kedvezmenyesArSzamolo() {
+
     }
-
-
 
     @Test
     @DisplayName("Kettő - 18 közötti életkor")
@@ -60,13 +59,8 @@ class utilTest {
     @Test
     @DisplayName("Üres dátum")
     void uresEdatum() {
-
         assertFalse(util.uresEdatum(null));
        assertTrue(util.uresEdatum(LocalDate.of(2020,01,01)));
-
     }
 
-    @Test
-    void tesztUzenet() {
-    }
 }
