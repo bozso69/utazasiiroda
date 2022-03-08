@@ -29,8 +29,9 @@ class utilTest {
     }
 
     @Test
+    @DisplayName("Kedvezmény számítás")
     void kedvezmenyesArSzamolo() {
-
+        assertEquals("0", util.kedvezmenyesArSzamolo("1000", 100));
     }
 
     @Test
@@ -60,7 +61,7 @@ class utilTest {
     @DisplayName("Üres dátum")
     void uresEdatum() {
         assertFalse(util.uresEdatum(null));
-       assertTrue(util.uresEdatum(LocalDate.of(2020,01,01)));
+        assertTrue(util.uresEdatum(LocalDate.of(2020,01,01)));
     }
 
 }
