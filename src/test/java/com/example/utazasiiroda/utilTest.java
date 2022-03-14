@@ -32,6 +32,9 @@ class utilTest {
     @DisplayName("Kedvezmény számítás")
     void kedvezmenyesArSzamolo() {
         assertEquals("0", util.kedvezmenyesArSzamolo("1000", 100));
+        assertEquals("600", util.kedvezmenyesArSzamolo("1000", 40));
+        assertEquals("800", util.kedvezmenyesArSzamolo("1000", 20));
+        assertEquals("750", util.kedvezmenyesArSzamolo("1000", 25));
     }
 
     @Test
