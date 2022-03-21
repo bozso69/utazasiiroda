@@ -27,6 +27,7 @@ public class GUI_basic extends Application {
     }
     util util = new util();
 
+
     GridPane rootNode = new GridPane();
 
     DatePicker szuletesNap = new DatePicker();
